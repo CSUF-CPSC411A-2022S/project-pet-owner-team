@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/project-pet-owner-team.iml" filepath="$PROJECT_DIR$/.idea/project-pet-owner-team.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CPSC411PetOwnerApp.iml" filepath="$PROJECT_DIR$/.idea/modules/CPSC411PetOwnerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPSC411PetOwnerApp.app.unitTest.iml" />
     </modules>
   </component>
 </project>
