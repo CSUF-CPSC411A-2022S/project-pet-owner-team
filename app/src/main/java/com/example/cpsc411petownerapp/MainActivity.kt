@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
     }
     
     override fun onSupportNavigateUp(): Boolean {
-        // Replace nav_host with the name of your nav host fragment in activity_main.xml
         val navController = this.findNavController(R.id.nav_host)
         return navController.navigateUp()
     }
