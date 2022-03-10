@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/healthTracker">
+
+    <fragment
+        android:id="@+id/healthTracker"
+        android:name="com.example.cpsc411petownerapp.HealthTracker"
+        android:label="health_tracker"
+        tools:layout="@layout/health_tracker" >
+        <action
+            android:id="@+id/action_healthTracker_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.cpsc411petownerapp.Result"
+        android:label="result"
+        tools:layout="@layout/result" />
+</navigation>
