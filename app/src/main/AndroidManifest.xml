@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CPSC411PetOwnerApp">
         <activity
+            android:name=".vetAppointmentReminder"
+            android:exported="false"
+            android:label="@string/title_activity_vet_appointment_reminder"
+            android:theme="@style/Theme.CPSC411PetOwnerApp.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
