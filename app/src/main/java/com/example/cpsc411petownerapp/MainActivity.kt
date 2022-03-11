@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             setContentView(R.layout.activity_main)
             val name: EditText = findViewById(R.id.medication)
             val address: EditText = findViewById(R.id.dosage)
-            val addButton: Button = findViewById(R.id.time)
+            val addButton: EditText = findViewById(R.id.time)
             addButton.setOnClickListener {
                 val toast = Toast.makeText(this, "Adding ${name.text} @ ${address.text}.", Toast.LENGTH_SHORT)
                 toast.show()
