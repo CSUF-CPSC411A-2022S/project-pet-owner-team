@@ -25,6 +25,10 @@
         <action
             android:id="@+id/action_menu_to_healthTracker"
             app:destination="@id/healthTracker" />
+
+        <action
+            android:id="@+id/action_menu_to_info2"
+            app:destination="@id/info2" />
     </fragment>
     <fragment
         android:id="@+id/healthTracker"
@@ -40,4 +44,9 @@
         android:name="com.example.cpsc411petownerapp.Result"
         android:label="result"
         tools:layout="@layout/result" />
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.example.cpsc411petownerapp.Info"
+        android:label="info"
+        tools:layout="@layout/info" />
 </navigation>
