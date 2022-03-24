@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val address: EditText = findViewById(R.id.dosage)
             val addButton: EditText = findViewById(R.id.time)
             addButton.setOnClickListener {
-                val toast = Toast.makeText(this, "Adding ${name.text} @ ${address.text}.", Toast.LENGTH_SHORT)
+                val toast = Toast.makeText(this, "Adding...", Toast.LENGTH_SHORT)
                 toast.show()
             }
             clearButton = findViewById(R.id.clear)
