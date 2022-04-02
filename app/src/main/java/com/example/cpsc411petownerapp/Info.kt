@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.cpsc411petownerapp.UserAdapter
 import com.example.cpsc411petownerapp.databinding.InfoBinding
 
@@ -36,6 +37,16 @@ class Info : Fragment() {
                 petType = binding.petType.text.toString(), petAge = binding.petAge.text.toString(),
                 petName = binding.petName.text.toString()
             )
+
+            //Toast object to display the appropriate message
+            val toast = Toast.makeText(
+                requireContext(),
+                "Adding ${binding.name.text}${binding.address.text}${binding.sex.text}" +
+                        " ${binding.phoneNumber.text} ${binding.age.text}${binding.petType.text}" +
+                        " ${binding.petAge.text} ${binding.petName.text}" ,
+                Toast.LENGTH_SHORT
+            )
+            toast.show()
 
             //Add the volunteer to the mutableList and notify the RecyclerView about the change.
             userAdapter.dataset.add(person)
