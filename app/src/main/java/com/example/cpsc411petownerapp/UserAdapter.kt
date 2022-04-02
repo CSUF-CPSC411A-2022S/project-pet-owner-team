@@ -14,6 +14,7 @@ class UserAdapter (
     var dataset: MutableList<Person> = mutableListOf<Person>()
 ) : RecyclerView.Adapter<UserAdapter.ItemViewHolder>() {
 
+
     //Inner class to hold the view
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 

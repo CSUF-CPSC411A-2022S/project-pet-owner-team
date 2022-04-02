@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    tools:context=".MainActivity">
+    tools:context=".Info">
     <!-- Create a layout that will display the name on the recycler view. -->
     <TextView
         android:id="@+id/position"
