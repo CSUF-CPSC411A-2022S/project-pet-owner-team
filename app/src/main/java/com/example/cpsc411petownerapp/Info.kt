@@ -42,8 +42,8 @@ class Info : Fragment() {
             //Display an error if there are no inputs
             if (binding.name.text.length == 0 || binding.address.text.length == 0 ||
                 binding.sex.text.length == 0 || binding.age.text.length == 0 ||
-                binding.petType.text.length == 0 || binding.petAge.text.length == 0 ||
-                binding.petName.text.length == 0
+                binding.phoneNumber.text.length == 0 || binding.petType.text.length == 0 ||
+                binding.petAge.text.length == 0 || binding.petName.text.length == 0
             ) {
 
                 errorMessage = "Please provide name, address, sex, age, pet type, " +
