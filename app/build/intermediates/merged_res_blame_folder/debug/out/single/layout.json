@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\login.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\result.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\result.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\info.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\menu.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_list_item.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\user_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\health_tracker.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\health_tracker.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.cpsc411petownerapp.Login"
+        android:label="login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.cpsc411petownerapp.Menu"
+        android:label="menu"
+        tools:layout="@layout/menu" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_menu_to_healthTracker"
+            app:destination="@id/healthTracker" />
+
+        <action
+            android:id="@+id/action_menu_to_info2"
+            app:destination="@id/info2" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthTracker"
+        android:name="com.example.cpsc411petownerapp.HealthTracker"
+        android:label="health_tracker"
+        tools:layout="@layout/health_tracker" >
+        <action
+            android:id="@+id/action_healthTracker_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.cpsc411petownerapp.Result"
+        android:label="result"
+        tools:layout="@layout/result" />
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.example.cpsc411petownerapp.Info"
+        android:label="info"
+        tools:layout="@layout/info" />
+</navigation>
