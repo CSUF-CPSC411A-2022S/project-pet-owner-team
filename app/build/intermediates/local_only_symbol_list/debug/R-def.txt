@@ -18,6 +18,7 @@ id address
 id age
 id breed
 id calculate
+id error_msg
 id frameLayout
 id frameLayout2
 id healthTracker

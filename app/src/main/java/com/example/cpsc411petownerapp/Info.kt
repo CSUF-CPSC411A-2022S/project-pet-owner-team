@@ -90,17 +90,5 @@ class Info : Fragment() {
 
         }
 
-    /**
-     * Called as the fragment begins to stop. An application may stop when it crashes, it is
-     * forced to close or when the screen rotates and it is recreated.
-     */
-    override fun onSaveInstanceState(outState: Bundle) {
-        // Save view hierarchy
-        super.onSaveInstanceState(outState)
-        // Bundles act like maps that store values for a given key.
-        // We store the error message String using a constant to avoid mistyping errors.
-        outState.putString(KEY_ERROR, binding.errorMsg.text.toString())
-    }
-
 }
 

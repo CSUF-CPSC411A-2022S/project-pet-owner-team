@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -31,6 +32,9 @@ public final class InfoBinding implements ViewBinding {
   public final EditText age;
 
   @NonNull
+  public final TextView errorMsg;
+
+  @NonNull
   public final EditText name;
 
   @NonNull
@@ -52,13 +56,15 @@ public final class InfoBinding implements ViewBinding {
   public final RecyclerView userList;
 
   private InfoBinding(@NonNull ConstraintLayout rootView, @NonNull Button add,
-      @NonNull EditText address, @NonNull EditText age, @NonNull EditText name,
-      @NonNull EditText petAge, @NonNull EditText petName, @NonNull EditText petType,
-      @NonNull EditText phoneNumber, @NonNull EditText sex, @NonNull RecyclerView userList) {
+      @NonNull EditText address, @NonNull EditText age, @NonNull TextView errorMsg,
+      @NonNull EditText name, @NonNull EditText petAge, @NonNull EditText petName,
+      @NonNull EditText petType, @NonNull EditText phoneNumber, @NonNull EditText sex,
+      @NonNull RecyclerView userList) {
     this.rootView = rootView;
     this.add = add;
     this.address = address;
     this.age = age;
+    this.errorMsg = errorMsg;
     this.name = name;
     this.petAge = petAge;
     this.petName = petName;
@@ -113,6 +119,12 @@ public final class InfoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.error_msg;
+      TextView errorMsg = ViewBindings.findChildViewById(rootView, id);
+      if (errorMsg == null) {
+        break missingId;
+      }
+
       id = R.id.name;
       EditText name = ViewBindings.findChildViewById(rootView, id);
       if (name == null) {
@@ -155,8 +167,8 @@ public final class InfoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new InfoBinding((ConstraintLayout) rootView, add, address, age, name, petAge, petName,
-          petType, phoneNumber, sex, userList);
+      return new InfoBinding((ConstraintLayout) rootView, add, address, age, errorMsg, name, petAge,
+          petName, petType, phoneNumber, sex, userList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
