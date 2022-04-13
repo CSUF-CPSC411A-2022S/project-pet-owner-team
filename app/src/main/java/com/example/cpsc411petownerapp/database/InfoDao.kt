@@ -32,7 +32,7 @@ interface InfoDao {
     // Data is stored to a List LiveData. We don't use suspend because LiveData objects
     // are already designed to work asynchronously.
     @Query("SELECT * from info_table ORDER BY infoId DESC")
-    fun getAllIntersections(): LiveData<List<Info>>
+    fun getAllInfos(): LiveData<List<Info>>
 
     // Custom query for deleting all entities on a table in the database
     // We use suspend to run the function asynchronously (coroutine).

@@ -51,8 +51,11 @@ class Info : Fragment() {
 
             } else {
 
-                val str = binding.age.text.toString()
-                val age = str.toInt()
+                val strtoint1 = binding.age.text.toString()
+                val age = strtoint1.toInt()
+
+                val strtoint2 = binding.petAge.text.toString()
+                val petAge = strtoint2.toInt()
 
 
                 var person = User(
@@ -62,7 +65,7 @@ class Info : Fragment() {
                     name = binding.name.text.toString(),
                     phoneNumber = binding.phoneNumber.text.toString(),
                     petType = binding.petType.text.toString(),
-                    petAge = binding.petAge.text.toString(),
+                    petAge,
                     petName = binding.petName.text.toString()
                 )
 
