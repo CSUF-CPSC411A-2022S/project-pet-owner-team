@@ -16,12 +16,12 @@ class InfoViewModel(
     application: Application) : AndroidViewModel(application) {
 
     var name = MutableLiveData("")
-    var age = MutableLiveData(0)
+    var age = MutableLiveData("")
     var sex = MutableLiveData("")
     var address = MutableLiveData("")
     var phoneNumber = MutableLiveData("")
     var petType = MutableLiveData("")
-    var petAge = MutableLiveData(0)
+    var petAge = MutableLiveData("")
     var petName = MutableLiveData("")
 
     // Retrieves all Information objects from the database

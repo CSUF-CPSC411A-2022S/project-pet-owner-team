@@ -58,7 +58,7 @@ class UserAdapter (
         holder.phoneNumber.text = item.phoneNumber
         holder.age.text = item.age.toString()
         holder.petType.text = item.petType
-        holder.petAge.text = item.petAge
+        holder.petAge.text = item.petAge.toString()
         holder.petName.text = item.petName
 
     }

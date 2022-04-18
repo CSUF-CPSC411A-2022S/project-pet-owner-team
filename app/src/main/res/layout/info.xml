@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-    <!-- ProfileViewModel variable used by the view to manage data -->
+    <!-- InfoViewModel variable used by the view to manage data -->
     <variable
         name="infoViewModel"
         type="com.example.cpsc411petownerapp.InfoViewModel" />

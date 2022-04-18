@@ -23,6 +23,7 @@ id frameLayout
 id frameLayout2
 id healthTracker
 id info2
+id info_list
 id login
 id menu
 id name

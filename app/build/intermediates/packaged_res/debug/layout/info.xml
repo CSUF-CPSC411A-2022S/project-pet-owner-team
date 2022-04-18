@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+                                                       
+                                                   
+
+    
+                                                                      
+             
+                            
+                                                              
+       
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Info">
+    tools:context=".Info" android:tag="layout/info_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
     <EditText
         android:id="@+id/name"
@@ -12,6 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter name: "
+        android:tag="binding_1"              
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +32,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter address: "
+        android:tag="binding_2"                 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -32,6 +43,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter sex: "
+        android:tag="binding_3"             
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address" />
@@ -42,6 +54,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter phone number: "
+        android:tag="binding_4"                     
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sex" />
@@ -52,6 +65,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter age: "
+        android:tag="binding_5"             
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
@@ -63,6 +77,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter type of pet: "
+        android:tag="binding_6"                 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/age" />
@@ -73,6 +88,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter name of pet: "
+        android:tag="binding_7"                
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/petType" />
@@ -83,6 +99,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter age of pet: "
+        android:tag="binding_8"                 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/petAge" />
@@ -95,7 +112,8 @@
         android:layout_marginTop="68dp"
         android:text="Add"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petAge" />
+        app:layout_constraintTop_toBottomOf="@+id/petAge"
+        android:tag="binding_9"                          />
 
     <TextView
         android:id="@+id/error_msg"
@@ -105,6 +123,20 @@
         app:layout_constrainedWidth="true"
         app:layout_constraintStart_toEndOf="@+id/add"
         app:layout_constraintTop_toBottomOf="@+id/petName" />
+
+    <TextView
+        android:id="@+id/info_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_msg"
+        android:tag="binding_10"                  />
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -121,3 +153,4 @@
         android:layout_marginEnd="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+         
