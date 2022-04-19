@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.util.Log
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import com.example.cpsc411petownerapp.UserAdapter
+import com.example.cpsc411petownerapp.database.InfoDatabase
 import com.example.cpsc411petownerapp.databinding.InfoBinding
 
 // Constant that stores the key for storing and retrieving error message data.
@@ -25,6 +27,17 @@ class Info : Fragment() {
         //RecyclerView adapter object and assign it to the RecyclerView.
         var userAdapter = UserAdapter(requireContext())
         binding.userList.adapter = userAdapter
+
+        // Get reference to this application
+        val application = requireNotNull(requireContext()).application
+
+
+        // Retrieve Info data access object.
+        val dataSource = InfoDatabase.getInstance(application).infoDao
+
+        // Create a factory that generates InfoViewModels connected to the database.
+        val viewModelFactory = InfoViewModelFactory(dataSource, application)
+
 
         // savedInstanceState is only null the first time the View is created.
         if (savedInstanceState != null) {
@@ -84,6 +97,16 @@ class Info : Fragment() {
 
                 // Inform the adapter that we made changes so the visual representation can be updated.
                 userAdapter.notifyDataSetChanged()
+
+                // Generate an ProfileViewModel using the factory.
+                val infoViewModel =
+                    ViewModelProvider(
+                        requireContext(), viewModelFactory).get(InfoViewModel::class.java)
+
+                // Connect the ProfileViewModel with the variable in the layout
+                binding.infoViewModel = infoViewModel
+                // Assign the lifecycle owner to the activity so it manages the data accordingly.
+                binding.lifecycleOwner = this
 
             }
             // Replace the TextView with errorMessage's value, which may or may not be empty.
