@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sruth\\.gradle\\caches\\transforms-3\\43f5aad2f5dcb6ecadc8602f9b5826e3\\transformed\\core-1.7.0\\res\\values-mk\\values-mk.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "90",
-                        "startColumns": "4",
-                        "startOffsets": "7697",
-                        "endColumns": "100",
-                        "endOffsets": "7793"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\sruth\\.gradle\\caches\\transforms-3\\1a1569ba5ca7299c2038dbb97f6b4e9f\\transformed\\material-1.5.0\\res\\values-mk\\values-mk.xml",
+                    "source": "C:\\Users\\kimvi\\.gradle\\caches\\transforms-3\\1a1569ba5ca7299c2038dbb97f6b4e9f\\transformed\\material-1.5.0\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sruth\\.gradle\\caches\\transforms-3\\4ebf769e19a6ba8e8fa316b26884d971\\transformed\\navigation-ui-2.3.5\\res\\values-mk\\values-mk.xml",
+                    "source": "C:\\Users\\kimvi\\.gradle\\caches\\transforms-3\\4ebf769e19a6ba8e8fa316b26884d971\\transformed\\navigation-ui-2.3.5\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -57,7 +40,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sruth\\.gradle\\caches\\transforms-3\\851919811184075cbb2c47fdb5af76a3\\transformed\\appcompat-1.4.1\\res\\values-mk\\values-mk.xml",
+                    "source": "C:\\Users\\kimvi\\.gradle\\caches\\transforms-3\\43f5aad2f5dcb6ecadc8602f9b5826e3\\transformed\\core-1.7.0\\res\\values-mk\\values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "7697",
+                        "endColumns": "100",
+                        "endOffsets": "7793"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\kimvi\\.gradle\\caches\\transforms-3\\851919811184075cbb2c47fdb5af76a3\\transformed\\appcompat-1.4.1\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

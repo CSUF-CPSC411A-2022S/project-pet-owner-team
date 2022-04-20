@@ -9,26 +9,29 @@
         android:id="@+id/login"
         android:name="com.example.cpsc411petownerapp.Login"
         android:label="login"
-        tools:layout="@layout/login" >
+        tools:layout="@layout/login">
         <action
             android:id="@+id/action_login_to_menu"
             app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
     </fragment>
     <fragment
         android:id="@+id/menu"
         android:name="com.example.cpsc411petownerapp.Menu"
         android:label="menu"
-        tools:layout="@layout/menu" >
+        tools:layout="@layout/menu">
         <argument
             android:name="name"
             app:argType="string" />
         <action
             android:id="@+id/action_menu_to_healthTracker"
             app:destination="@id/healthTracker" />
-
         <action
             android:id="@+id/action_menu_to_info2"
             app:destination="@id/info2" />
+
     </fragment>
     <fragment
         android:id="@+id/healthTracker"
@@ -49,4 +52,9 @@
         android:name="com.example.cpsc411petownerapp.Info"
         android:label="info"
         tools:layout="@layout/info" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.cpsc411petownerapp.Register"
+        android:label="register"
+        tools:layout="@layout/register" />
 </navigation>

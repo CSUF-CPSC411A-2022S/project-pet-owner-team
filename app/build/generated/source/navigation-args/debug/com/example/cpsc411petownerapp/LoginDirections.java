@@ -2,6 +2,7 @@ package com.example.cpsc411petownerapp;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.NavDirections;
 import java.lang.IllegalArgumentException;
 import java.lang.Object;
@@ -17,6 +18,11 @@ public class LoginDirections {
   @NonNull
   public static ActionLoginToMenu actionLoginToMenu(@NonNull String name) {
     return new ActionLoginToMenu(name);
+  }
+
+  @NonNull
+  public static NavDirections actionLoginToRegister() {
+    return new ActionOnlyNavDirections(R.id.action_login_to_register);
   }
 
   public static class ActionLoginToMenu implements NavDirections {

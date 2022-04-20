@@ -5,21 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.util.Log
 import android.widget.Toast
-import com.example.cpsc411petownerapp.UserAdapter
 import com.example.cpsc411petownerapp.databinding.InfoBinding
 
-// Constant that stores the key for storing and retrieving error message data.
-const val KEY_ERROR = "error"
-
 class Info : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
+        // Constant that stores the key for storing and retrieving error message data.
+        val KEY_ERROR = "error"
         // Inflate and bind the profile.xml layout for the Profile fragment
         val binding = InfoBinding.inflate(layoutInflater)
         //RecyclerView adapter object and assign it to the RecyclerView.
@@ -86,9 +82,6 @@ class Info : Fragment() {
             // Replace the TextView with errorMessage's value, which may or may not be empty.
             binding.errorMsg.setText(errorMessage)
         }
-         return binding.root
-
-        }
-
+        return binding.root
+    }
 }
-

@@ -11,6 +11,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id action_healthTracker_to_result
 id action_login_to_menu
+id action_login_to_register
 id action_menu_to_healthTracker
 id action_menu_to_info2
 id add
@@ -18,9 +19,11 @@ id address
 id age
 id breed
 id calculate
+id emailAddress
 id error_msg
 id frameLayout
 id frameLayout2
+id frameLayout3
 id healthTracker
 id info2
 id login
@@ -38,11 +41,16 @@ id petName
 id petType
 id phoneNumber
 id position
+id register
+id registerText
 id result
 id resultText
 id sex
 id signIn
+id signUp
+id submit
 id userList
+id userPassword
 id username
 id weight
 id welcome
@@ -52,6 +60,7 @@ layout health_tracker
 layout info
 layout login
 layout menu
+layout register
 layout result
 layout user_list_item
 mipmap ic_launcher
