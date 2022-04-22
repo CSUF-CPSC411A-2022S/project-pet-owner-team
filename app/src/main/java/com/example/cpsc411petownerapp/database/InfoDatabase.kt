@@ -12,7 +12,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Info::class], version = 1, exportSchema = false)
 abstract class InfoDatabase: RoomDatabase() {
     // Data access object for the entity.
-    abstract val profileDao: InfoDao
+    abstract val infoDao: InfoDao
 
     companion object {
         // Holds a reference to the database.
