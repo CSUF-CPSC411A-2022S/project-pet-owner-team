@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\merged_res\\debug\\layout_info.xml.flat",

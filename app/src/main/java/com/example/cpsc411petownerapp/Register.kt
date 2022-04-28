@@ -6,7 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.findNavController
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
+import com.example.cpsc411petownerapp.userViewModel.UserViewModel
+import com.example.cpsc411petownerapp.userViewModel.UserViewModelFactory
+import com.example.cpsc411petownerapp.database.UserData.UserDatabase
 import com.example.cpsc411petownerapp.databinding.RegisterBinding
 
 class Register : Fragment() {
@@ -15,8 +19,28 @@ class Register : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate and bind the register.xml layout for the Register fragment
-        val binding = RegisterBinding.inflate(layoutInflater)
+        val binding: RegisterBinding =
+            DataBindingUtil.inflate(inflater, R.layout.register, container, false)
+
+
+        // Get reference to the application
+        val application = requireNotNull(this.activity).application
+
+        // Retrieve User data access object.
+        val dataSource = UserDatabase.getInstance(application).userDao
+
+        // Create a factory that generates UserViewModels connected to the database.
+        val viewModelFactory = UserViewModelFactory(dataSource, application)
+
+        // Generate an UserViewModel using the factory.
+        val userViewModel =
+            ViewModelProvider(
+                this, viewModelFactory).get(UserViewModel::class.java)
+
+        // Connect the UserViewModel with the variable in the layout
+        binding.userViewModel = userViewModel
+        // Assign the lifecycle owner to the activity so it manages the data accordingly.
+        binding.lifecycleOwner = this
 
         /**
          * Add setOnClickListener to the Calculate button that navigates from HealthTracker to

@@ -1,69 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Register">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/registerText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:textSize="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+    <data>
+        <!-- Provide a variable that binds to the ViewModel. -->
+        <variable
+            name="userViewModel"
+            type="com.example.cpsc411petownerapp.userViewModel.UserViewModel" />
+    </data>
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="243dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerText" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Register">
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="28dp"
-        android:text="Submit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258" />
 
-    <EditText
-        android:id="@+id/emailAddress"
-        android:layout_width="243dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="243dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Username"
+            android:text="@={userViewModel.username}"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerText" />
 
-    <EditText
-        android:id="@+id/userPassword"
-        android:layout_width="243dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="28dp"
+            android:text="Submit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailAddress"
+            android:onClick="@{() -> userViewModel.insert()}"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="243dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:text="@={userViewModel.email}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="243dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Password"
+            android:text="@={userViewModel.password}"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

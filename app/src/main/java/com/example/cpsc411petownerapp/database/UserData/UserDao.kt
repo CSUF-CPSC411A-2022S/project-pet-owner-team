@@ -25,13 +25,13 @@ interface UserDao {
     // Custom query for retrieving a single Intersection from a table in the database using
     // its intersection id. We don't use suspend because LiveData objects are already designed
     // to work asynchronous.
-    @Query("SELECT * from user_table WHERE username = :key")
-    fun get(key: String): LiveData<User>?
+    @Query("SELECT * from user_table WHERE username = :username and password = :password")
+    fun login(username: String, password: String): LiveData<User>
 
     // Custom query for retrieving all Intersection entities from a table in the database.
     // Data is stored to a List LiveData. We don't use suspend because LiveData objects
     // are already designed to work asynchronously.
-    @Query("SELECT * from user_table ORDER BY userId DESC")
+    @Query("SELECT * from user_table")
     fun getAllUsers(): LiveData<List<User>>
 
     // Custom query for deleting all entities on a table in the database

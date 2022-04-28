@@ -5,6 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import com.example.cpsc411petownerapp.database.Info
 
 /**
  * Data access object for the Intersection entity. The class describes how data is

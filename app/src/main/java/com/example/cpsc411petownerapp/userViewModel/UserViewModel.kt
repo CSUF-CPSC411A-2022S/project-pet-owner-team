@@ -1,4 +1,4 @@
-package com.example.cpsc411petownerapp.UserViewModel
+package com.example.cpsc411petownerapp.userViewModel
 
 import android.app.Application
 import androidx.lifecycle.*
@@ -15,28 +15,6 @@ class UserViewModel(
     var password = MutableLiveData("")
     var email = MutableLiveData("")
 
-    // Retrieves all User objects from the database
-    // Represented as a LiveData<List<User>>
-    val userList = database.getAllUsers()
-
-    /**
-     * Creates a LiveData<String> that contains information from all User objects.
-     * The Transformations.map function takes a LiveData object, performs operations on the
-     * object and returns a LiveData-wrapped object.
-     */
-    var profileString = Transformations.map(userList) {
-            users -> // profiles refer to the underlying data List<User>
-        var result = ""
-        // Retrieve each User object from the list
-        for (user in users) {
-            // Create a string using the User name and email address.
-            // The user string is appended to a longer string with all profiles.
-            result += "${user.username} (${user.email})\n"
-        }
-        // Returns the aggregated String that is wrapped by the map function in a LiveData object.
-        result
-    }
-
     /**
      * Inserts the User object into the database.
      */
@@ -44,7 +22,7 @@ class UserViewModel(
         // Launch coroutines in the viewModelScope so that the coroutines are automatically
         // canceled when the ViewModel is destroyed.
         viewModelScope.launch {
-            // Create Intersection object using data stored in the EditText views
+            // Create User object using data stored in the EditText views
             var user = User()
             user.username = username.value.toString()
             user.password = password.value.toString()
@@ -54,6 +32,10 @@ class UserViewModel(
             database.insert(user)
         }
 
+    }
+
+    fun checkLogin(username: String, password: String): LiveData<User> {
+        return database.login(username, password)
     }
 
     /**

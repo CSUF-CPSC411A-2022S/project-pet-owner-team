@@ -1,4 +1,4 @@
-package com.example.cpsc411petownerapp.UserViewModel
+package com.example.cpsc411petownerapp.userViewModel
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
