@@ -8,27 +8,6 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="healthTracker">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="361" />
-                            <option name="y" value="-820" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_healthTracker_to_result">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
                   <entry key="info2">
                     <value>
                       <LayoutPositions>
@@ -78,12 +57,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_menu_to_healthTracker">
+                            <entry key="action_menu_to_info2">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_menu_to_info2">
+                            <entry key="action_menu_to_todoListFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -105,14 +84,35 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="result">
+                  <entry key="todoItemFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="668" />
-                            <option name="y" value="-819" />
+                            <option name="x" value="687" />
+                            <option name="y" value="-897" />
                           </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="todoListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="344" />
+                            <option name="y" value="-898" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_todoListFragment_to_todoItemFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

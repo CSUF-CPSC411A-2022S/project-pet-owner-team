@@ -2,6 +2,7 @@ package com.example.cpsc411petownerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.cpsc411petownerapp.databinding.ActivityMainBinding
@@ -12,8 +13,9 @@ class MainActivity : AppCompatActivity() {
         /**
          * Use a binding object to simplify access to the visual design elements.
          */
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        // Create data binding and assign layout for the activity.
+        val binding: ActivityMainBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val navController = this.findNavController(R.id.nav_host)
         NavigationUI.setupActionBarWithNavController(this,navController)

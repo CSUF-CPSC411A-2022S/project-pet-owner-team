@@ -53,6 +53,7 @@ class Register : Fragment() {
             ) {
                 val toast = Toast.makeText(activity, "Successfully Register.", Toast.LENGTH_SHORT)
                 toast.show()
+                userViewModel.insert()
                 binding.username.text.clear()
                 binding.userPassword.text.clear()
                 binding.emailAddress.text.clear()

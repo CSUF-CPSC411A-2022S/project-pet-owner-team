@@ -28,7 +28,7 @@ class Menu : Fragment() {
         // Health Tracker Button Event
         binding.option2.setOnClickListener() {view: View ->
             view.findNavController()
-                .navigate(R.id.action_menu_to_healthTracker)
+                .navigate(R.id.action_menu_to_todoListFragment)
         }
 
         // View/Edit Button Event

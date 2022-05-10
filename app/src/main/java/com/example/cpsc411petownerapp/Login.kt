@@ -14,8 +14,6 @@ import com.example.cpsc411petownerapp.userViewModel.UserViewModel
 import com.example.cpsc411petownerapp.userViewModel.UserViewModelFactory
 import com.example.cpsc411petownerapp.databinding.LoginBinding
 import com.example.cpsc411petownerapp.database.UserData.UserDatabase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 class Login : Fragment() {
 
@@ -47,18 +45,27 @@ class Login : Fragment() {
         binding.lifecycleOwner = this
 
         binding.signIn.setOnClickListener { view: View ->
+            val user = userViewModel.checkLogin(
+                binding.username.text.toString(),
+                binding.password.text.toString()
+            )
             var valid = false
-            if (valid) {
-                val toast = Toast.makeText(activity, "Successfully Login as ${binding.username.text}", Toast.LENGTH_SHORT)
-                toast.show()
-                // Show the menu fragment after the user logged in
+            user.observe(viewLifecycleOwner, Observer {
+                if (it != null) {
+                    valid = true
+                }
+                if (valid) {
+                    val toast = Toast.makeText(activity, "Successfully Login as ${binding.username.text}", Toast.LENGTH_SHORT)
+                    toast.show()
+                    // Show the menu fragment after the user logged in
                     view.findNavController()
                         .navigate(LoginDirections
                             .actionLoginToMenu(binding.username.text.toString()))
-            } else {
-                val toast = Toast.makeText(activity, "Invalid Input. Try Again", Toast.LENGTH_SHORT)
-                toast.show()
-            }
+                } else {
+                    val toast = Toast.makeText(activity, "Invalid Input. Try Again", Toast.LENGTH_SHORT)
+                    toast.show()
+                }
+            })
         }
         binding.signUp.setOnClickListener { view: View ->
             view.findNavController()

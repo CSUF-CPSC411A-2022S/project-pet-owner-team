@@ -9,12 +9,12 @@ public class MenuDirections {
   }
 
   @NonNull
-  public static NavDirections actionMenuToHealthTracker() {
-    return new ActionOnlyNavDirections(R.id.action_menu_to_healthTracker);
+  public static NavDirections actionMenuToInfo2() {
+    return new ActionOnlyNavDirections(R.id.action_menu_to_info2);
   }
 
   @NonNull
-  public static NavDirections actionMenuToInfo2() {
-    return new ActionOnlyNavDirections(R.id.action_menu_to_info2);
+  public static NavDirections actionMenuToTodoListFragment() {
+    return new ActionOnlyNavDirections(R.id.action_menu_to_todoListFragment);
   }
 }
