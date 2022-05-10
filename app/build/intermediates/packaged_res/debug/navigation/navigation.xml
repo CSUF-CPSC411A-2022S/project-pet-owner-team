@@ -26,18 +26,13 @@
             android:name="name"
             app:argType="string" />
         <action
-            android:id="@+id/action_menu_to_info2"
-            app:destination="@id/info2" />
+            android:id="@+id/action_menu_to_infoListFragment"
+            app:destination="@id/infoListFragment" />
         <action
             android:id="@+id/action_menu_to_todoListFragment"
             app:destination="@id/todoListFragment" />
 
     </fragment>
-    <fragment
-        android:id="@+id/info2"
-        android:name="com.example.cpsc411petownerapp.Info"
-        android:label="info"
-        tools:layout="@layout/info" />
     <fragment
         android:id="@+id/register"
         android:name="com.example.cpsc411petownerapp.Register"
@@ -59,4 +54,23 @@
             android:name="taskId"
             app:argType="long" />
     </fragment>
+    <fragment
+        android:id="@+id/infoListFragment"
+        android:name="com.example.cpsc411petownerapp.infolist.InfoListFragment"
+        android:label="InfoListFragment" >
+        <action
+            android:id="@+id/action_infoListFragment_to_infoItemFragment"
+            app:destination="@id/infoItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoItemFragment"
+        android:name="com.example.cpsc411petownerapp.infoitem.InfoItemFragment"
+        android:label="InfoItemFragment" >
+        <argument
+            android:name="infoId"
+            app:argType="long" />
+    </fragment>
+        <argument
+            android:name="infoId"
+            app:argType="long" />
 </navigation>

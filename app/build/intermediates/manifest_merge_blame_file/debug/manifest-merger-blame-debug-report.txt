@@ -6,75 +6,75 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml
+8-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml
+9-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
-12-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:6:9-35
+12-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.7.0] C:\Users\kimvi\.gradle\caches\transforms-3\43f5aad2f5dcb6ecadc8602f9b5826e3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.7.0] C:\Users\sruth\.gradle\caches\transforms-3\43f5aad2f5dcb6ecadc8602f9b5826e3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:7:9-43
+15-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:8:9-41
+16-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:9:9-54
+17-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:10:9-35
+18-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/Theme.CPSC411PetOwnerApp" >
-20-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:11:9-56
+20-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:11:9-56
 21        <activity
-21-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:12:9-20:20
+21-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:12:9-20:20
 22            android:name="com.example.cpsc411petownerapp.MainActivity"
-22-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:13:13-41
+22-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:13:13-41
 23            android:exported="true" >
-23-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:14:13-36
+23-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:14:13-36
 24            <intent-filter>
-24-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:15:13-19:29
+24-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:15:13-19:29
 25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:16:17-69
-25-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:16:25-66
+25-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:16:17-69
+25-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:16:25-66
 26
 27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:18:17-77
-27-->C:\Users\kimvi\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:18:27-74
+27-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:18:17-77
+27-->C:\Users\sruth\StudioProjects\project-pet-owner-team\app\src\main\AndroidManifest.xml:18:27-74
 28            </intent-filter>
 29        </activity>
 30
 31        <service
-31-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\kimvi\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:25:9-28:40
+31-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\sruth\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:25:9-28:40
 32            android:name="androidx.room.MultiInstanceInvalidationService"
-32-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\kimvi\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:26:13-74
+32-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\sruth\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:26:13-74
 33            android:directBootAware="true"
-33-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\kimvi\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:27:13-43
+33-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\sruth\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:27:13-43
 34            android:exported="false" />
-34-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\kimvi\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:28:13-37
+34-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\sruth\.gradle\caches\transforms-3\2c2bd5fed836055535b45a032dc0163a\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:28:13-37
 35
 36        <provider
-36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 37            android:name="androidx.startup.InitializationProvider"
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
 38            android:authorities="com.example.cpsc411petownerapp.androidx-startup"
-38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
 39            android:exported="false" >
-39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
 40            <meta-data
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 41                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
 42                android:value="androidx.startup" />
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimvi\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sruth\.gradle\caches\transforms-3\2901c1c2af0f75125f629845e25d1d1c\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
 43            <meta-data
-43-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimvi\.gradle\caches\transforms-3\991c7a4e39560348162950d0fa3bddd5\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+43-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sruth\.gradle\caches\transforms-3\991c7a4e39560348162950d0fa3bddd5\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 44                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimvi\.gradle\caches\transforms-3\991c7a4e39560348162950d0fa3bddd5\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sruth\.gradle\caches\transforms-3\991c7a4e39560348162950d0fa3bddd5\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 45                android:value="androidx.startup" />
-45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimvi\.gradle\caches\transforms-3\991c7a4e39560348162950d0fa3bddd5\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sruth\.gradle\caches\transforms-3\991c7a4e39560348162950d0fa3bddd5\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 46        </provider>
 47    </application>
 48
