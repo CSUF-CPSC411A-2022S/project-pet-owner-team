@@ -34,7 +34,7 @@ class Menu : Fragment() {
         // View/Edit Button Event
         binding.option1.setOnClickListener() {view: View ->
             view.findNavController()
-                .navigate(R.id.action_menu_to_info2)
+                .navigate(R.id.action_menu_to_infoListFragment)
         }
 
         return binding.root
