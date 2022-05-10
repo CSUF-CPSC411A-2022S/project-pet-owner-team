@@ -14,7 +14,7 @@ public class MenuDirections {
   }
 
   @NonNull
-  public static NavDirections actionMenuToInfo2() {
-    return new ActionOnlyNavDirections(R.id.action_menu_to_info2);
+  public static NavDirections actionMenuToInfoListFragment() {
+    return new ActionOnlyNavDirections(R.id.action_menu_to_infoListFragment);
   }
 }

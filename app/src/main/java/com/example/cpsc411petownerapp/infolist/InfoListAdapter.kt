@@ -23,7 +23,7 @@ class InfoListAdapter(val clickListener: InfoListener) : ListAdapter<Info,
         RecyclerView.ViewHolder(binding.root) {
 
         /**
-         * Assign an intersection object and clickListener to the ItemViewHolder
+         * Assign an info object and clickListener to the ItemViewHolder
          */
         fun bind(item: Info, clickListener: InfoListener) {
             binding.info = item

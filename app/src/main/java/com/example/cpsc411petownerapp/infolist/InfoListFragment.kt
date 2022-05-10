@@ -41,7 +41,7 @@ class InfoListFragment : Fragment() {
             ViewModelProvider(
                 this, viewModelFactory).get(InfoViewModel::class.java)
 
-        // Connect the IntersectionViewModel with the variable in the layout
+        // Connect the InfoViewModel with the variable in the layout
         binding.infoViewModel = infoViewModel
         // Assign the lifecycle owner to the activity so it manages the data accordingly.
         binding.lifecycleOwner = this
@@ -49,7 +49,7 @@ class InfoListFragment : Fragment() {
         // Provide a lambda function that is called when the RecyclerView item is selected.
         var infoAdapter = InfoListAdapter(InfoListener {
                 infoId ->
-            // Navigate to the intersection view and provide the id of the intersection referenced
+            // Navigate to the intersection view and provide the id of the info referenced
             // by the select RecyclerView item.
             this.findNavController().navigate(
                 InfoListFragmentDirections
@@ -59,8 +59,8 @@ class InfoListFragment : Fragment() {
         // Attach intersection adapter.
         binding.infoRecyclerview.adapter = infoAdapter
 
-        // Submit an updated list to the intersection listAdapter whenever it changes. Take note
-        // intersectionList is a LiveData object.
+        // Submit an updated list to the info listAdapter whenever it changes. Take note
+        // infoList is a LiveData object.
         infoViewModel.infoList.observe(viewLifecycleOwner, Observer {
             it?.let {
                 infoAdapter.submitList(it)

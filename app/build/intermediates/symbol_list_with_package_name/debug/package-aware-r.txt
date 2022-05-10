@@ -2603,11 +2603,12 @@ id action_context_bar
 id action_divider
 id action_healthTracker_to_result
 id action_image
+id action_infoListFragment_to_infoItemFragment
 id action_login_to_menu
 id action_menu_divider
 id action_menu_presenter
 id action_menu_to_healthTracker
-id action_menu_to_info2
+id action_menu_to_infoListFragment
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
@@ -2615,6 +2616,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_info
 id address
 id age
 id alertTitle
@@ -2667,6 +2669,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id clear
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2676,6 +2679,7 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2729,7 +2733,6 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id error_msg
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2772,8 +2775,10 @@ id image
 id immediateStop
 id included
 id info
-id info2
-id info_list
+id infoItemFragment
+id infoListFragment
+id info_recyclerview
+id infosLabel
 id invisible
 id inward
 id italic
@@ -3041,7 +3046,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id userList
 id username
 id vertical_only
 id view_offset_helper
@@ -3167,7 +3171,9 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout health_tracker
-layout info
+layout info_item
+layout info_item_fragment
+layout info_list_fragment
 layout login
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

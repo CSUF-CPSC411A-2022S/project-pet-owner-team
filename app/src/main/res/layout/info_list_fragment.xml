@@ -6,7 +6,7 @@
     <data>
         <!-- IntersectionViewModel variable used to manage data on the fragment. -->
         <variable
-            name="intersectionViewModel"
+            name="infoViewModel"
             type="com.example.cpsc411petownerapp.infolist.InfoViewModel" />
     </data>
 
@@ -34,20 +34,118 @@
 
         <!-- @= indicates that value in the edit text is copied to the ViewModel's location -->
         <EditText
-            android:id="@+id/location"
+            android:id="@+id/age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:ems="10"
-            android:hint="Location"
-            android:inputType="textPersonName"
+            android:hint="Age"
             android:minHeight="48dp"
             android:text="@={infoViewModel.age}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <!-- @= indicates that value in the edit text is copied to the ViewModel's location -->
+        <EditText
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Sex"
+            android:minHeight="48dp"
+            android:text="@={infoViewModel.sex}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age" />
+
+        <!-- @= indicates that value in the edit text is copied to the ViewModel's location -->
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Address"
+            android:minHeight="48dp"
+            android:text="@={infoViewModel.address}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sex" />
+
+        <!-- @= indicates that value in the edit text is copied to the ViewModel's location -->
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:minHeight="48dp"
+            android:text="@={infoViewModel.phoneNumber}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <EditText
+            android:id="@+id/petType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Pet type"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@={infoViewModel.petType}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+
+        <EditText
+            android:id="@+id/petAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Pet age"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@={infoViewModel.petAge}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petType" />
+
+        <EditText
+            android:id="@+id/petName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Pet name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@={infoViewModel.petName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petAge" />
+
+
 
         <!-- onClick accepts a lambda function indicated by () -> The body
              of the lambda function calls the insert function
@@ -58,10 +156,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:onClick="@{() -> intersectionViewModel.insert()}"
+            android:onClick="@{() -> infoViewModel.insert()}"
             android:text="Add info"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location" />
+            app:layout_constraintTop_toBottomOf="@+id/petName" />
 
         <!-- onClick accepts a lambda function indicated by () -> The body
              of the lambda function calls the clear function
@@ -72,10 +170,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="@{()-> intersectionViewModel.clear()}"
+            android:onClick="@{()-> infoViewModel.clear()}"
             android:text="Clear"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location" />
+            app:layout_constraintTop_toBottomOf="@+id/petName" />
 
         <TextView
             android:id="@+id/infosLabel"

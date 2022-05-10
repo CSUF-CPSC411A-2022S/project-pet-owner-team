@@ -28,7 +28,7 @@ data class Info(
 
     // Non-primary key column. Data type is specified in the property.
     @ColumnInfo()
-    var age: Int = 0,
+    var age: String = "",
 
     // Non-primary key column. Data type is specified in the property.
     @ColumnInfo()
@@ -48,7 +48,7 @@ data class Info(
 
     // Non-primary key column. Data type is specified in the property.
     @ColumnInfo()
-    var petAge: Int = 0,
+    var petAge: String = "",
 
     // Non-primary key column. Data type is specified in the property.
     @ColumnInfo()

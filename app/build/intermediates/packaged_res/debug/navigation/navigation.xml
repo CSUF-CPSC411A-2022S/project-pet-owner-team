@@ -25,10 +25,10 @@
         <action
             android:id="@+id/action_menu_to_healthTracker"
             app:destination="@id/healthTracker" />
-
         <action
-            android:id="@+id/action_menu_to_info2"
-            app:destination="@id/info2" />
+            android:id="@+id/action_menu_to_infoListFragment"
+            app:destination="@id/infoListFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/healthTracker"
@@ -45,8 +45,19 @@
         android:label="result"
         tools:layout="@layout/result" />
     <fragment
-        android:id="@+id/info2"
-        android:name="com.example.cpsc411petownerapp.Info"
-        android:label="info"
-        tools:layout="@layout/info" />
+        android:id="@+id/infoListFragment"
+        android:name="com.example.cpsc411petownerapp.infolist.InfoListFragment"
+        android:label="InfoListFragment" >
+        <action
+            android:id="@+id/action_infoListFragment_to_infoItemFragment"
+            app:destination="@id/infoItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoItemFragment"
+        android:name="com.example.cpsc411petownerapp.infoitem.InfoItemFragment"
+        android:label="InfoItemFragment" >
+        <argument
+            android:name="infoId"
+            app:argType="long" />
+    </fragment>
 </navigation>

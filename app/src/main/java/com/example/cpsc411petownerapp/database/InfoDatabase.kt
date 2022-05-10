@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
  * Manages the database that stores the Intersection table and its entities.
  * The abstract class should inherit RoomDatabase()
  */
-@Database(entities = [Info::class], version = 1, exportSchema = false)
+@Database(entities = [Info::class], version = 2, exportSchema = false)
 abstract class InfoDatabase: RoomDatabase() {
     // Data access object for the entity.
     abstract val infoDao: InfoDao

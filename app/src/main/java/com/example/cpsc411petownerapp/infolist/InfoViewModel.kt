@@ -57,14 +57,12 @@ class InfoViewModel(
             // Create Intersection object using data stored in the EditText views
             var info = Info()
             info.name = name.value.toString()
-            val str1 = age.value.toString()
-            info.age = str1.toInt()
+            info.age = age.value.toString()
             info.sex = sex.value.toString()
             info.address = address.value.toString()
             info.phoneNumber = phoneNumber.value.toString()
             info.petType = petType.value.toString()
-            val str2 = petAge.value.toString()
-            info.petAge = str2.toInt()
+            info.petAge = petAge.value.toString()
             info.petName = petName.value.toString()
 
             // Insert data to the database using the insert coroutine.

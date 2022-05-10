@@ -8,12 +8,24 @@
         "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\result.xml"
     },
     {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info_list_fragment.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\info_list_fragment.xml"
+    },
+    {
         "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info.xml",
         "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\info.xml"
     },
     {
         "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\menu.xml",
         "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info_item.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\info_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info_item_fragment.xml",
+        "source": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\src\\main\\res\\layout\\info_item_fragment.xml"
     },
     {
         "merged": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_list_item.xml",

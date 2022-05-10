@@ -17,7 +17,7 @@ import com.example.cpsc411petownerapp.infolist.InfoViewModelFactory
 /**
  * Fragment that displays a single intersection.
  */
-class IntersectionItemFragment : Fragment() {
+class InfoItemFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

@@ -49,11 +49,15 @@
         android:name="com.example.cpsc411petownerapp.infolist.InfoListFragment"
         android:label="InfoListFragment" >
         <action
-            android:id="@+id/action_infoListFragment_to_intersectionItemFragment"
-            app:destination="@id/intersectionItemFragment" />
+            android:id="@+id/action_infoListFragment_to_infoItemFragment"
+            app:destination="@id/infoItemFragment" />
     </fragment>
     <fragment
-        android:id="@+id/intersectionItemFragment"
-        android:name="com.example.cpsc411petownerapp.infoitem.IntersectionItemFragment"
-        android:label="IntersectionItemFragment" />
+        android:id="@+id/infoItemFragment"
+        android:name="com.example.cpsc411petownerapp.infoitem.InfoItemFragment"
+        android:label="InfoItemFragment" >
+        <argument
+            android:name="infoId"
+            app:argType="long" />
+    </fragment>
 </navigation>
