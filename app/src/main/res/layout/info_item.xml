@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Variable that holds information about a single intersection. -->
+        <variable
+            name="info"
+            type="com.example.cpsc411petownerapp.database.Info" />
+
+        <variable
+            name="clickListener"
+            type="com.example.cpsc411petownerapp.infolist.InfoListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Displays the name of the info. Clicking on the info will call
+             the passed clickListener's onClick function. It passes the info object
+             also used for populating the interface.
+        -->
+        <!-- Displays the petType of the info. Clicking on the info will call
+              the passed clickListener's onClick function. It passes the info object
+              also used for populating the interface.
+         -->
+
+        <!-- Displays the petName of the info. Clicking on the info will call
+              the passed clickListener's onClick function. It passes the info object
+              also used for populating the interface.
+         -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#72673AB7"
+            android:gravity="center_vertical"
+            android:onClick="@{()-> clickListener.onClick(info)}"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@{info.name}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

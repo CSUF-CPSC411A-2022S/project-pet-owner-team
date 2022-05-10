@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Displays information about the info selected from the RecyclerView -->
+    <data>
+        <!-- ViewModel that contains data about the intersection. -->
+        <variable
+            name="infoItemViewModel"
+            type="com.example.cpsc411petownerapp.infoitem.InfoItemViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".infoitem.InfoItemFragment">
+
+        <!-- Display information about the info. -->
+        <TextView
+            android:id="@+id/petType"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@{infoItemViewModel.info.petType}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/petAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{infoItemViewModel.info.petAge}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petType" />
+        <TextView
+            android:id="@+id/petName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{infoItemViewModel.info.petName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petAge" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
