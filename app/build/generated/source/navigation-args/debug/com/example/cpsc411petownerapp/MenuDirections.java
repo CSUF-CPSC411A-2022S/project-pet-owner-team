@@ -17,4 +17,9 @@ public class MenuDirections {
   public static NavDirections actionMenuToTodoListFragment() {
     return new ActionOnlyNavDirections(R.id.action_menu_to_todoListFragment);
   }
+
+  @NonNull
+  public static NavDirections actionMenuToMedicationFragment() {
+    return new ActionOnlyNavDirections(R.id.action_menu_to_medicationFragment);
+  }
 }

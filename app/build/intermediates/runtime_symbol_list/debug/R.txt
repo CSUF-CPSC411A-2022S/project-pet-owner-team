@@ -2607,6 +2607,7 @@ int id action_login_to_register 0x7f080041
 int id action_menu_divider 0x7f080042
 int id action_menu_presenter 0x7f080043
 int id action_menu_to_infoListFragment 0x7f080044
+int id action_menu_to_medicationFragment 0x7f08021c
 int id action_menu_to_todoListFragment 0x7f080045
 int id action_mode_bar 0x7f080046
 int id action_mode_bar_stub 0x7f080047
@@ -2715,6 +2716,7 @@ int id disableIntraAutoTransition 0x7f0800ad
 int id disablePostScroll 0x7f0800ae
 int id disableScroll 0x7f0800af
 int id disjoint 0x7f0800b0
+int id dosage 0x7f08021e
 int id dragAnticlockwise 0x7f0800b1
 int id dragClockwise 0x7f0800b2
 int id dragDown 0x7f0800b3
@@ -2826,6 +2828,8 @@ int id material_timepicker_ok_button 0x7f08011c
 int id material_timepicker_view 0x7f08011d
 int id material_value_index 0x7f08011e
 int id media_actions 0x7f08011f
+int id medication 0x7f08021f
+int id medicationFragment 0x7f08021d
 int id menu 0x7f080120
 int id message 0x7f080121
 int id middle 0x7f080122
@@ -3181,6 +3185,7 @@ int layout design_navigation_menu 0x7f0b0029
 int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
+int layout fragment_medication 0x7f0b0089
 int layout health_tracker 0x7f0b002d
 int layout info_item 0x7f0b002e
 int layout info_item_fragment 0x7f0b002f

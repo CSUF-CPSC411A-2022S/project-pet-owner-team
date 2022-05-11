@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_menu_to_todoListFragment"
             app:destination="@id/todoListFragment" />
+        <action
+            android:id="@+id/action_menu_to_medicationFragment"
+            app:destination="@id/medicationFragment" />
 
     </fragment>
     <fragment
@@ -73,4 +76,9 @@
         <argument
             android:name="infoId"
             app:argType="long" />
+    <fragment
+        android:id="@+id/medicationFragment"
+        android:name="com.example.cpsc411petownerapp.MedicationFragment"
+        android:label="Medication"
+        tools:layout="@layout/fragment_medication" />
 </navigation>
