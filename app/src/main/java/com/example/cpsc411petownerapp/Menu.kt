@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.findNavController
 import com.example.cpsc411petownerapp.databinding.MenuBinding
 
@@ -37,6 +38,12 @@ class Menu : Fragment() {
                 .navigate(R.id.action_menu_to_infoListFragment)
         }
 
+        // Medication Button Event
+        binding.option3.setOnClickListener() {view: View ->
+            view.findNavController()
+                .navigate(R.id.action_menu_to_medicationFragment)
+            //Toast.makeText(context, "u selected medication", Toast.LENGTH_SHORT).show()
+        }
         return binding.root
     }
 }
