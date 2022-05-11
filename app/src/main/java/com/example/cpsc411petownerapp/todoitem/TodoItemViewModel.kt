@@ -10,7 +10,7 @@ import com.example.cpsc411petownerapp.database.todoData.TodoDao
  */
 class TodoItemViewModel(
     val taskId: Long,
-    val database: TodoDao, // Data access object for the Intersection entity
+    val database: TodoDao, // Data access object for the TD entity
     application: Application
 ) : AndroidViewModel(application) {
 

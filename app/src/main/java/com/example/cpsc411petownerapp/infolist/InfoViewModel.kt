@@ -29,25 +29,6 @@ class InfoViewModel(
     val infoList = database.getAllInfos()
 
     /**
-     * Creates a LiveData<String> that contains information from all Info objects.
-     * The Transformations.map function takes a LiveData object, performs operations on the
-     * object and returns a LiveData-wrapped object.
-     */
-    var infoString = Transformations.map(infoList) {
-            infos -> // infos refer to the underlying data List<Info>
-        var result = ""
-        // Retrieve each Info object from the list
-        for (info in infos) {
-            // Create a string using the Info name,age, sex, address, phone number
-                //pet type, pet age, and pet name .
-            // The information string is appended to a longer string with all profiles.
-            result += "${info.name} ${info.age}\n"
-        }
-        // Returns the aggregated String that is wrapped by the map function in a LiveData object.
-        result
-    }
-
-    /**
      * Inserts the Info object into the database.
      */
     fun insert() {

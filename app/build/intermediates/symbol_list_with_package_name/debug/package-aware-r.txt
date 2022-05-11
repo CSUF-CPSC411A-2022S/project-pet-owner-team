@@ -3273,7 +3273,6 @@ layout text_view_without_line_height
 layout todo_item
 layout todo_item_fragment
 layout todo_list_fragment
-layout user_list_item
 menu example_menu
 menu example_menu2
 mipmap ic_launcher

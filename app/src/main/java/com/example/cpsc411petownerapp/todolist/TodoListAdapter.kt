@@ -13,7 +13,7 @@ import com.example.cpsc411petownerapp.databinding.TodoItemBinding
  * clicks/taps on each item.
  */
 class TodoListAdapter(val clickListener: TodoListener) : ListAdapter<Todo,
-        TodoListAdapter.ItemViewHolder>(IntersectionDiffCallback()) {
+        TodoListAdapter.ItemViewHolder>(TodoDiffCallback()) {
 
     /**
      * Inner class used to store data about each element in the RecyclerView. We provide a binding
@@ -56,7 +56,7 @@ class TodoListAdapter(val clickListener: TodoListener) : ListAdapter<Todo,
 /**
  * Manages a RecyclerView list using the Eugene W. Myers's difference algorithm to reduce processing.
  */
-class IntersectionDiffCallback : DiffUtil.ItemCallback<Todo>() {
+class TodoDiffCallback : DiffUtil.ItemCallback<Todo>() {
     /**
      * We use taskId because it is a unique ID referring to a single element.
      */

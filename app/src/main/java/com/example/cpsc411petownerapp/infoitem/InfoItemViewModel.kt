@@ -1,5 +1,4 @@
 package com.example.cpsc411petownerapp.infoitem
-
 import android.app.Application
 import androidx.lifecycle.*
 import com.example.cpsc411petownerapp.database.InfoDao
@@ -11,7 +10,7 @@ import com.example.cpsc411petownerapp.database.InfoDao
  */
 class InfoItemViewModel(
     val infoId: Long,
-    val database: InfoDao, // Data access object for the Intersection entity
+    val database: InfoDao, // Data access object for the Info entity
     application: Application
 ) : AndroidViewModel(application) {
 

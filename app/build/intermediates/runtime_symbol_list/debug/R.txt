@@ -3272,7 +3272,6 @@ int layout text_view_without_line_height 0x7f0b0084
 int layout todo_item 0x7f0b0085
 int layout todo_item_fragment 0x7f0b0086
 int layout todo_list_fragment 0x7f0b0087
-int layout user_list_item 0x7f0b0088
 int menu example_menu 0x7f0c0000
 int menu example_menu2 0x7f0c0001
 int mipmap ic_launcher 0x7f0d0000

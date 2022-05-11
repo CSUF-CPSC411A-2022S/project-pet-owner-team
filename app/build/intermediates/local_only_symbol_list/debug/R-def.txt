@@ -46,7 +46,6 @@ id petAge
 id petName
 id petType
 id phoneNumber
-id position
 id register
 id registerText
 id resultText
@@ -76,7 +75,6 @@ layout result
 layout todo_item
 layout todo_item_fragment
 layout todo_list_fragment
-layout user_list_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation

@@ -6,13 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.cpsc411petownerapp.R
 import com.example.cpsc411petownerapp.database.InfoDatabase
 import com.example.cpsc411petownerapp.databinding.InfoItemFragmentBinding
-import com.example.cpsc411petownerapp.infolist.InfoViewModel
-import com.example.cpsc411petownerapp.infolist.InfoViewModelFactory
+
 
 /**
  * Fragment that displays a single intersection.
