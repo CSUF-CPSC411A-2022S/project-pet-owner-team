@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Displays information about the intersection selected from the RecyclerView -->
+    <!-- Displays information about the to-do selected from the RecyclerView -->
     <data>
-        <!-- ViewModel that contains data about the intersection. -->
+        <!-- ViewModel that contains data about the to-do. -->
         <variable
             name="todoItemViewModel"
             type="com.example.cpsc411petownerapp.todoitem.TodoItemViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,10 +22,11 @@
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="353dp"
+            android:layout_marginBottom="89dp"
             android:text="@{todoItemViewModel.todo.title}"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

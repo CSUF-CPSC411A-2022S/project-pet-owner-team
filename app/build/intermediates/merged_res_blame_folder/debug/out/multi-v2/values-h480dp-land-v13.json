@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sruth\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+            "outputFile": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sruth\\.gradle\\caches\\transforms-3\\1a1569ba5ca7299c2038dbb97f6b4e9f\\transformed\\material-1.5.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\kimvi\\.gradle\\caches\\transforms-3\\1a1569ba5ca7299c2038dbb97f6b4e9f\\transformed\\material-1.5.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

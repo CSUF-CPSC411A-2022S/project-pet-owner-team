@@ -5,8 +5,8 @@ import com.example.cpsc411petownerapp.database.todoData.TodoDao
 
 /**
  * TodoViewModel used for data binding. Provides a connection to the database
- * for storing and retrieving corresponding values. It retrieves the corresponding intersection
- * with the provided intersection ID.
+ * for storing and retrieving corresponding values. It retrieves the corresponding to-do
+ * with the provided task ID.
  */
 class TodoItemViewModel(
     val taskId: Long,
@@ -14,6 +14,6 @@ class TodoItemViewModel(
     application: Application
 ) : AndroidViewModel(application) {
 
-    // Retrieves a LiveData-wrapped intersection object given its ID
+    // Retrieves a LiveData-wrapped to-do object given its ID
     val todo = database.get(taskId)
 }

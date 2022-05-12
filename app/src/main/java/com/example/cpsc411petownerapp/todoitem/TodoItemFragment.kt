@@ -46,6 +46,8 @@ class TodoItemFragment : Fragment() {
                 this, viewModelFactory
             ).get(TodoItemViewModel::class.java)
 
+
+
         // Connect the TodoViewModel with the variable in the layout
         binding.todoItemViewModel = todoItemViewModel
         // Assign the lifecycle owner to the activity so it manages the data accordingly.

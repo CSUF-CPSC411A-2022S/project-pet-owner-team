@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/login"
         android:name="com.example.cpsc411petownerapp.Login"
-        android:label="login"
+        android:label="Login"
         tools:layout="@layout/login">
         <action
             android:id="@+id/action_login_to_menu"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/menu"
         android:name="com.example.cpsc411petownerapp.Menu"
-        android:label="menu"
+        android:label="Menu"
         tools:layout="@layout/menu">
         <argument
             android:name="name"
@@ -31,17 +31,20 @@
         <action
             android:id="@+id/action_menu_to_todoListFragment"
             app:destination="@id/todoListFragment" />
+        <action
+            android:id="@+id/action_menu_to_mapFragment"
+            app:destination="@id/mapFragment" />
 
     </fragment>
     <fragment
         android:id="@+id/register"
         android:name="com.example.cpsc411petownerapp.Register"
-        android:label="register"
+        android:label="Register"
         tools:layout="@layout/register" />
     <fragment
         android:id="@+id/todoListFragment"
         android:name="com.example.cpsc411petownerapp.todolist.TodoListFragment"
-        android:label="TodoListFragment" >
+        android:label="TODO List">
         <action
             android:id="@+id/action_todoListFragment_to_todoItemFragment"
             app:destination="@id/todoItemFragment" />
@@ -49,7 +52,7 @@
     <fragment
         android:id="@+id/todoItemFragment"
         android:name="com.example.cpsc411petownerapp.todoitem.TodoItemFragment"
-        android:label="TodoItemFragment" >
+        android:label="TODO Item">
         <argument
             android:name="taskId"
             app:argType="long" />
@@ -57,7 +60,7 @@
     <fragment
         android:id="@+id/infoListFragment"
         android:name="com.example.cpsc411petownerapp.infolist.InfoListFragment"
-        android:label="InfoListFragment" >
+        android:label="Info List">
         <action
             android:id="@+id/action_infoListFragment_to_infoItemFragment"
             app:destination="@id/infoItemFragment" />
@@ -65,7 +68,7 @@
     <fragment
         android:id="@+id/infoItemFragment"
         android:name="com.example.cpsc411petownerapp.infoitem.InfoItemFragment"
-        android:label="InfoItemFragment" >
+        android:label="Info Item">
         <argument
             android:name="infoId"
             app:argType="long" />
@@ -73,4 +76,8 @@
         <argument
             android:name="infoId"
             app:argType="long" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.cpsc411petownerapp.MapFragment"
+        android:label="Map Lookup" />
 </navigation>

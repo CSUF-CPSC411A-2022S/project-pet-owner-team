@@ -5,22 +5,23 @@ buildscript {
         google()
         mavenCentral()
     }
-    // Create a variable to easily switch the version of the library
-    // Remove comments on ext when working on 6.1 Model 2
+
     ext {
         navigationVersion = "2.3.5"
         room_version = '2.4.0-alpha03'
+        // Required for setting retrofit version
+        version_retrofit = "2.9.0"
+        // Required for setting moshi version
+        version_moshi = "1.8.0"
+        // Required for setting glide version
+        version_glide = "4.8.0"
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.1'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
 
-        // Add safeargs dependencies. Remove comments on classpath only when working on 6.2 Model 2
+        // Add safeargs dependencies.
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
-        // End of safeargs dependencies
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 

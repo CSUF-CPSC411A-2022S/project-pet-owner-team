@@ -18,12 +18,11 @@ class Menu : Fragment() {
 
         binding.welcomeId.setText("Hi, ${args.name}")
 
-        /* Button Event For View/Edit
-        binding.option1.setOnClickListener() { view: View ->
+        // View/Edit Button Event
+        binding.option1.setOnClickListener() {view: View ->
             view.findNavController()
-                .navigate(R.id.action_Menu_to_Option1)
+                .navigate(R.id.action_menu_to_infoListFragment)
         }
-        */
 
         // Health Tracker Button Event
         binding.option2.setOnClickListener() {view: View ->
@@ -31,10 +30,10 @@ class Menu : Fragment() {
                 .navigate(R.id.action_menu_to_todoListFragment)
         }
 
-        // View/Edit Button Event
-        binding.option1.setOnClickListener() {view: View ->
+        // Vet/Hospital Location Search
+        binding.option4.setOnClickListener() {view: View ->
             view.findNavController()
-                .navigate(R.id.action_menu_to_infoListFragment)
+                .navigate(R.id.action_menu_to_mapFragment)
         }
 
         return binding.root

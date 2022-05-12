@@ -40,6 +40,7 @@ class TodoViewModel(
         }
     }
 
+
     /**
      * Deletes all To-do entities in the database.
      */
