@@ -60,6 +60,10 @@
         "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\login.xml"
     },
     {
+        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_medication.xml.flat",
+        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\fragment_medication.xml"
+    },
+    {
         "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\merged_res\\debug\\layout_todo_list_fragment.xml.flat",
         "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\todo_list_fragment.xml"
     },

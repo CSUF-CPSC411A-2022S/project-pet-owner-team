@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- Main fragment showing the input text fields and intersection list. -->
+    <!-- Main fragment showing the input text fields and to-do list. -->
     <data>
         <!-- TodoViewModel variable used to manage data on the fragment. -->
         <variable
@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <!-- @= indicates that value in the edit text is copied to the ViewModel's name -->
+        <!-- @= indicates that value in the edit text is copied to the ViewModel's title -->
         <EditText
             android:id="@+id/title"
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- @= indicates that value in the edit text is copied to the ViewModel's location -->
+        <!-- @= indicates that value in the edit text is copied to the ViewModel's detail -->
         <EditText
             android:id="@+id/detail"
             android:layout_width="match_parent"

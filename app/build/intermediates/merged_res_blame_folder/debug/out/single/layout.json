@@ -8,12 +8,24 @@
         "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
+        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\register.xml",
+        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\register.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\todo_item.xml",
+        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\todo_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info_item.xml",
+        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\info_item.xml"
+    },
+    {
         "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\todo_list_fragment.xml",
         "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\todo_list_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\register.xml",
-        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\register.xml"
+        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_medication.xml",
+        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\fragment_medication.xml"
     },
     {
         "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\login.xml",
@@ -34,13 +46,5 @@
     {
         "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\todo_item.xml",
-        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\todo_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info_item.xml",
-        "source": "C:\\Users\\kimvi\\StudioProjects\\project-pet-owner-team\\app\\src\\main\\res\\layout\\info_item.xml"
     }
 ]

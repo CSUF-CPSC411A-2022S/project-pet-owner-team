@@ -14,7 +14,7 @@ class TodoViewModelFactory(
 ) : ViewModelProvider.Factory {
 
     /**
-     * Creates the IntersectionViewModel
+     * Creates the TodoViewModel
      */
     @Suppress("unchecked_cast")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {

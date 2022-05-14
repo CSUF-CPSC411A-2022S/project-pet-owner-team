@@ -2609,6 +2609,7 @@ id action_menu_divider
 id action_menu_presenter
 id action_menu_to_infoListFragment
 id action_menu_to_mapFragment
+id action_menu_to_medicationFragment
 id action_menu_to_todoListFragment
 id action_mode_bar
 id action_mode_bar_stub
@@ -2715,6 +2716,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id dosage
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2830,6 +2832,8 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
+id medication
+id medicationFragment
 id menu
 id message
 id middle
@@ -3184,6 +3188,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_medication
 layout info_item
 layout info_item_fragment
 layout info_list_fragment

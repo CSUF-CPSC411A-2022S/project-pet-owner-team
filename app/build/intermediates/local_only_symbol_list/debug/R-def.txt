@@ -14,8 +14,10 @@ id action_login_to_menu
 id action_login_to_register
 id action_menu_to_infoListFragment
 id action_menu_to_mapFragment
+id action_menu_to_medicationFragment
 id action_menu_to_todoListFragment
 id action_todoListFragment_to_todoItemFragment
+id add
 id add_info
 id add_todo
 id address
@@ -23,6 +25,7 @@ id age
 id clear
 id constraintLayout
 id detail
+id dosage
 id emailAddress
 id frameLayout
 id frameLayout2
@@ -35,6 +38,8 @@ id infosLabel
 id location
 id login
 id mapFragment
+id medication
+id medicationFragment
 id menu
 id name
 id nav_host
@@ -55,6 +60,7 @@ id sex
 id signIn
 id signUp
 id submit
+id time
 id title
 id todoItemFragment
 id todoListFragment
@@ -65,6 +71,7 @@ id username
 id welcome
 id welcome_id
 layout activity_main
+layout fragment_medication
 layout info_item
 layout info_item_fragment
 layout info_list_fragment

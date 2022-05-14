@@ -30,6 +30,12 @@ class Menu : Fragment() {
                 .navigate(R.id.action_menu_to_todoListFragment)
         }
 
+        // Medication Button Event
+        binding.option3.setOnClickListener() {view: View ->
+            view.findNavController()
+                .navigate(R.id.action_menu_to_medicationFragment)
+        }
+
         // Vet/Hospital Location Search
         binding.option4.setOnClickListener() {view: View ->
             view.findNavController()

@@ -22,4 +22,9 @@ public class MenuDirections {
   public static NavDirections actionMenuToMapFragment() {
     return new ActionOnlyNavDirections(R.id.action_menu_to_mapFragment);
   }
+
+  @NonNull
+  public static NavDirections actionMenuToMedicationFragment() {
+    return new ActionOnlyNavDirections(R.id.action_menu_to_medicationFragment);
+  }
 }

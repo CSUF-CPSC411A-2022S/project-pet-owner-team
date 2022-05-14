@@ -44,6 +44,7 @@ class Login : Fragment() {
         // Assign the lifecycle owner to the activity so it manages the data accordingly.
         binding.lifecycleOwner = this
 
+        // Check the status of a user's login
         binding.signIn.setOnClickListener { view: View ->
             val user = userViewModel.checkLogin(
                 binding.username.text.toString(),
@@ -67,6 +68,8 @@ class Login : Fragment() {
                 }
             })
         }
+
+        // Move to the register fragment
         binding.signUp.setOnClickListener { view: View ->
             view.findNavController()
                 .navigate(R.id.action_login_to_register)
